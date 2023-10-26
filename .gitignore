@@ -1,2 +1,4 @@
-Obsidian-1.4.13.AppImage
+# ignore any appimages
+
+*.AppImage
 
