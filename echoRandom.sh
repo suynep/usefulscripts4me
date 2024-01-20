@@ -7,7 +7,7 @@ CHOSENLINES=()
 
 for i in $(seq 1 5); do
 	RANDOM_LINE=$((1 + $RANDOM % $LINE_NUMBER))
-	CHOSENLINES+=$(sed -n "${RANDOM_LINE}p" $HOME/emoticons.txt | cut -d ';' -f 2)
+	CHOSENLINES+=$(sed -n "${RANDOM_LINE}p" $HOME/.emoticons.txt | cut -d ';' -f 2)
 done
 
 echo $CHOSENLINES | lolcat
