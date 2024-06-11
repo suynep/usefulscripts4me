@@ -6,6 +6,20 @@ if [ ! -d $DIRECTORY ]; then
 	mkdir $DIRECTORY
 	cd $DIRECTORY
 	wget https://github.com/processing/p5.js/releases/download/v1.9.0/p5.js
+	echo -e "<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> --Title-- </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="assets/p5.js"></script>
+  </head>
+  <body>
+	<script src="script.js"></script>
+  </body>
+</html>" > index.html
 fi
 
 mkdir -p $1/assets/
