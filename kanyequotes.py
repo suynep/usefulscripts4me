@@ -17,12 +17,17 @@ if not os.path.isfile(FILE_PATH):
 with open(FILE_PATH, "r") as f:
     global quotes
     quotes = f.readlines()
-    
-choice = random.choice(quotes)
 
 colors = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white",
         "light_grey", "dark_grey", "light_red", "light_green", "light_yellow", "light_blue",
         "light_magenta", "light_cyan"]
+    
+names = ["Kanye Omari West", "Ye","Yeezus","Saint Pablo","Yeezy","Louis Vuitton Don"]
 
-print(colored(choice, random.choice(colors)) + "-- Yeetzyy")
+choice = random.choice(quotes)
+length = len(choice) + 2
+
+print("*" * length)
+print(colored(choice, random.choice(colors)) + f"-- {random.choice(names)}")
+print("*" * length)
 
