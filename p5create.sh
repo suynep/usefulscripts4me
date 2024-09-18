@@ -7,17 +7,17 @@ if [ ! -d $DIRECTORY ]; then
 	cd $DIRECTORY
 	wget https://github.com/processing/p5.js/releases/download/v1.9.0/p5.js
 	echo -e "<!DOCTYPE html>
-<html lang="en">
+<html lang=\"en\">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset=\"UTF-8\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">
     <title> --Title-- </title>
-    <link rel="stylesheet" href="style.css">
-    <script src="assets/p5.js"></script>
+    <link rel=\"stylesheet\" href=\"style.css\">
+    <script src=\"assets/p5.js\"></script>
   </head>
   <body>
-	<script src="script.js"></script>
+	<script src=\"script.js\"></script>
   </body>
 </html>" > index.html
 fi

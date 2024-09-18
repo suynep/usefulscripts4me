@@ -18,9 +18,7 @@ with open(FILE_PATH, "r") as f:
     global quotes
     quotes = f.readlines()
 
-colors = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white",
-        "light_grey", "dark_grey", "light_red", "light_green", "light_yellow", "light_blue",
-        "light_magenta", "light_cyan"]
+colors = ["red", "green", "yellow", "blue", "magenta", "cyan", "white"]
     
 names = ["Kanye Omari West", "Ye","Yeezus","Saint Pablo","Yeezy","Louis Vuitton Don"]
 
