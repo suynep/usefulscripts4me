@@ -55,6 +55,7 @@ if __name__=="__main__":
         with open(os.path.join(cwd, "static", "sketch.js"), "w") as f:
             f.write(
                 """
+                const socket = io.connect("http://localhost:5000"); // Adjust to your server address
                     function setup() {
     let canvas = createCanvas(800, 600);
     canvas.parent("p5-canvas");
